@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Weather App</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Import Google Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="script.js" defer></script>
   </head>
   <body>
 
@@ -14,11 +14,11 @@
       <header class="input-container">
         <input type="text" class="city-input" placeholder="Search City">
         <button class="searchBtn">
-          <span><i class="fa-solid fa-magnifying-glass searchIcon"></i></span>
+          <i class="fa-solid fa-magnifying-glass"></i>
         </button>
       </header>
 
-      <section class="weather-info" >
+      <section class="weather-info" style="display: none;">
         <div class="location-date-container">
           <div class="location">
             <i class="fa-solid fa-location-dot fa-1.5x "></i>
@@ -79,11 +79,29 @@
         </div>
       </section>
 
+      <section class="search-city section-message">
+        <img src="./assets/message/search-city.png" >
+        <div>
+          <h1>Search City</h1>
+          <h4 class="regular-txt">
+            Find out the weather conditions of the city 
+          </h4>
+        </div>
+      </section>
 
+      <section class="not-found section-message" style="display: none;">
+        <img src="./assets/message/not-found.png" >
+        <div>
+          <h1>Search City</h1>
+          <h4 class="regular-txt">
+            Find out the weather conditions of the city 
+          </h4>
+        </div>
+      </section>
+      
     </main>
 
 
-    <script src="script.js"></script>
 </body>
   
 </html>
